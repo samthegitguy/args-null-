@@ -22,6 +22,8 @@ namespace config
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public static bool hastobetrue = true;
+        public static bool hastobefalse = false;
         public MainPage()
         {
             this.InitializeComponent();
@@ -33,6 +35,7 @@ namespace config
             this.Visibility = Visibility.Collapsed;
             Stop.Visibility = Visibility.Visible;
         }
+
         private void Stop_Click(object sender, RoutedEventArgs e)
         {
             // TODO: Add event handler
